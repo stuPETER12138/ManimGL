@@ -17,7 +17,7 @@ directories:
   # to render videos and to look for svg/png assets. This
   # will specify where those assets live, with a base directory,
   # and various subdirectory names within it
-  base: ""
+  base: "./"
   subdirs:
     # Where should manim output video and image files?
     output: "./outputs"
@@ -34,11 +34,11 @@ directories:
   # to file to prevent the need to re-compute, e.g. recompiling the latex. By default,
   # it stores this saved data to whatever directory appdirs.user_cache_dir("manim") returns,
   # but here a user can specify a different cache location
-  cache: "./cache"
+  cache: "../cache"
 window:
   # The position of window on screen. UR -> Upper Right, and likewise DL -> Down and Left,
   # UO would be upper middle, etc.
-  position_string: UL
+  position_string: UR
   # If using multiple monitors, which one should show the window
   monitor_index: 0
   # If not full screen, the default to give it half the screen width
