@@ -15,8 +15,9 @@ Manim/
 ├── src/
 └── custom_config.yml
 ```
-## Way to use
+## A little changes for Chinese
 
-```bash
-manimgl {path_to_code} {class_name} --config_file ./custom_config.yml {others}
-```
+- /manimlib/utils/tex_file_writing.py
+    For the `full_tex_to_svg` method, modify the line: change `tex_path.write_text(full_tex)` to `tex_path.write_text(full_tex, encoding='utf-8')`
+- /manimlib/tex_template.yml
+    Remove `\usepackage[english]{babel}` from the ctex section.

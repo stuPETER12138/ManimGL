@@ -3,7 +3,7 @@ from os import system
 
 class TextDemo(Scene):
     def construct(self):
-        tex = Text("Hello, World!", font_size=72, color=WHITE)
+        tex = Tex("君安。")
         animation = Write(tex)
         self.play(animation)
         self.wait(1)
